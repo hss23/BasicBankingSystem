@@ -5,15 +5,18 @@ import { NavLink } from 'react-router-dom';
 
 const Customer = (props) => {
     return (
-        <tr className="my-2 p-2">
+        <tr className="">
             <td>{props.index}</td>
-            <thead> {props.user.username}</thead>
+            <th> {props.user.username}</th>
             <td>{props.user.email}</td>
             <td>{props.user.mobileNumber}</td>
-            <td>{props.user.currentBalance}</td>
-            <NavLink to={props.link} onClick={props.clik} className={"bg-white border-l-2 hover:bg-blue-400 rounded-xl"}>
-                <td>Transfer</td>
-            </NavLink>
+            <td>{props.user.currentBalance}
+            </td>
+            <button className={"flex text-white text-lg -right-24 absolute px-2 bg-green-500 hover:bg-blue-400 border-0 rounded-md"}>
+                <NavLink to={props.link} onClick={props.clik} className="w-full no-underline">
+                    Transfer
+                </NavLink>
+            </button>
         </tr>
     );
 }

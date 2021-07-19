@@ -14,26 +14,28 @@ const Receiver = () => {
 
     return (
         <div className="container py-5">
-            <h1>Send money to....</h1>
-            <div className="flex justify-center">
-                <table className="w-4/6">
-                    <thead>
-                        <th>Sl No</th>
-                        <th>User Name</th>
-                        <th>Email</th>
-                        <th>Mobile Number</th>
-                        <th>Current Balance</th>
-                    </thead>
-                    <tbody>
-                        {newUsers.map((user, index) =>
-                            <Customer user={user}
-                                key={'_' + Math.random().toString(36).substr(2, 9)}
-                                index={index + 1}
-                                clik={() => dispatch(actions.addReceiver(user))}
-                                link={"/transfer"} />
-                        )}
-                    </tbody>
-                </table>
+            <h1 className="text-5xl">Send money to....</h1>
+            <div className="flex justify-center items-center p-8">
+                <div className="flex flex-col text-lg justify-center bg-white rounded-lg shadow-lg p-8">
+                    <table className="w-5/6 relative">
+                        <thead>
+                            <th>Sl No</th>
+                            <th>User Name</th>
+                            <th>Email</th>
+                            <th>Mobile Number</th>
+                            <th>Current Balance</th>
+                        </thead>
+                        <tbody>
+                            {newUsers.map((user, index) =>
+                                <Customer user={user}
+                                    key={'_' + Math.random().toString(36).substr(2, 9)}
+                                    index={index + 1}
+                                    clik={() => dispatch(actions.addReceiver(user))}
+                                    link={"/transfer"} />
+                            )}
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     );
