@@ -1,6 +1,4 @@
 import React from 'react';
-import classes from './Transactions.module.css';
-
 import { useSelector } from 'react-redux';
 import Transaction from './Transaction/Transaction';
 

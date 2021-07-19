@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import styles from './Customers.module.css';
+import React from 'react';
 
-import { connect, useSelector, useDispatch } from 'react-redux';
+
+import { useSelector, useDispatch } from 'react-redux';
 import * as actions from '../../store/actions/index';
 import Customer from './Customer/Customer';
 import * as actionTypes from '../../store/actions/actionTypes';

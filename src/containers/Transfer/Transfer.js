@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import classes from './Transfer.module.css';
 
-import { connect, useSelector, useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import * as actions from '../../store/actions/index';
 import * as actionTypes from '../../store/actions/actionTypes';

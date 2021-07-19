@@ -1,6 +1,4 @@
 import React from 'react';
-import classes from './Transaction.module.css';
-
 
 const Transaction = (props) => {
     let border = null;

@@ -1,5 +1,4 @@
 import React from 'react';
-import classes from './Receiver.module.css';
 
 import { useSelector, useDispatch } from 'react-redux';
 import * as actions from '../../store/actions/index';
